@@ -1,0 +1,4 @@
+{{#each _.data.site.products.edges}}
+<h3><a href="{{node.path}}">{{node.name}}</a></h3>
+<div>SKU: {{node.sku}}</div>
+{{/each}}

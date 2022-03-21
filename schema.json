@@ -1,0 +1,43 @@
+[
+	{
+		"type": "hidden",
+		"settings": [
+			{
+				"type": "graphQl",
+				"id": "graphQueries",
+				"typeMeta": {
+					"mappings": {
+						"productIds": {
+							"reads": "product.value.*.productId",
+							"type": "Int!"
+						}
+					}
+				}
+			}
+		]
+	},
+	{
+		"type": "tab",
+		"label": "Content",
+		"sections": [
+			{
+				"label": "Products",
+				"settings": [
+					{
+						"type": "productSet",
+						"label": "Product Set",
+						"id": "product",
+						"entryLabel": "Product",
+						"default": {
+							"type": "manual",
+							"value": []
+						}
+					}
+				],
+				"typeMeta": {
+					"type": "setSection"
+				}
+			}
+		]
+	}
+]

@@ -1,0 +1,14 @@
+query productsById($productIds: [Int!]) { 
+  site { 
+    products(entityIds: $productIds) { 
+      edges {
+        node {
+          entityId
+          sku
+          name
+          path
+        }
+      }
+    } 
+  } 
+}
